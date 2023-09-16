@@ -66,16 +66,15 @@ class GenerateReadme:
             for screenshot in self.screenshots:
                 readme.write("![alt text](" + screenshot + ")\n")
 
-        if len(self.installation) == "":
+        if len(self.installation) != "":
             readme.write("## Installation\n\n---\n")
             readme.write(self.installation + "\n")
 
-        if len(self.sources) == "":
+        if len(self.sources) != "":
             readme.write("## Sources\n---\n")
-            for source in self.sources:
-                readme.write("- " + source + "\n")
+            readme.write(self.sources + "\n")
 
-        if len(self.personalized) == "" or len(self.personalizedTitle) != 0:
+        if len(self.personalized) != "" or len(self.personalizedTitle) != 0:
             readme.write("## " + self.personalizedTitle + "\n\n---\n")
             readme.write(self.personalized + "\n")
 
