@@ -71,7 +71,7 @@ class GenerateReadme:
             readme.write(self.installation + "\n")
 
         if len(self.sources) != "":
-            readme.write("## Sources\n---\n")
+            readme.write("## Sources\n\n---\n")
             readme.write(self.sources + "\n")
 
         if len(self.personalized) != "" or len(self.personalizedTitle) != 0:
