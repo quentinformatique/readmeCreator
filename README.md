@@ -26,7 +26,7 @@ A python app who can created the readme.md file for your your github projects. I
 ## Screenshots
 
 ---
-![alt text](img/screen.png)
+![alt text](img/screenshot.png)
 ## requirements
 
 ---
