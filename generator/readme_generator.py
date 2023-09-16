@@ -30,7 +30,7 @@ class GenerateReadme:
         if len(self.title) != 0 or len(self.logo) != 0:
             if len(self.title) != 0 and len(self.logo) != 0:
                 readme.write("<div align=\"center\">\n")
-                readme.write("<img src=\""+self.logo+"\" width=\"100\" height=\"100\">\n\n")
+                readme.write("<img src=\""+self.logo+"\">\n\n")
                 readme.write("# " + self.title+"\n\n---\n\n")
                 readme.write("</div>\n\n")
 
@@ -40,7 +40,7 @@ class GenerateReadme:
                 readme.write("</div>\n\n")
             else:
                 readme.write("<div align=\"center\">\n")
-                readme.write("<img src=\""+self.logo+"\" width=\"100\" height=\"100\">\n")
+                readme.write("<img src=\""+self.logo+"\">\n")
                 readme.write("</div>\n\n---\n\n")
 
         if len(self.description) != 0:
@@ -53,7 +53,8 @@ class GenerateReadme:
             if self.checkboxs[1] == 1:
                 readme.write("-<a href=\"https://github.com/"+self.author+"/"+self.title+"/issues/new/choose\">Report a bug</a>-")
             if self.checkboxs[2] == 1:
-                readme.write("-<a href=\"https://github.com/"+self.author+"/"+self.title+"/issues/new/choose\">Request a feature</a>-")
+                readme.write("-<a href=\"https://github.com/"+self.author+"/"+self.title+"/issues/new/choose\">Request a feature</a>-\n")
+            readme.write("</div>\n\n")
 
         if len(self.features) != 0:
             readme.write("## Features\n\n---\n")
