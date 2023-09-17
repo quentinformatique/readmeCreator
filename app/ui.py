@@ -14,6 +14,7 @@ class mainPage:
         app.geometry("1390x800")
         app.resizable(False, False)
         app.grab_set()
+        app.iconbitmap("img/logo.ico")
 
         title_label = customtkinter.CTkLabel(app, text="Fill up the fields and generate your file", fg_color="transparent",
                                              font=("Arial", 25, "bold", "underline"))

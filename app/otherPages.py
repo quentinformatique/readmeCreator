@@ -6,6 +6,7 @@ def error_window(message):
     window = customtkinter.CTk()
     window.title("Error")
     window.resizable(False, False)
+    window.iconbitmap("img/logo.ico")
 
     error_label = customtkinter.CTkLabel(window, text=message,
                                          fg_color="transparent", font=("Arial", 15, "bold"))
@@ -21,6 +22,7 @@ def open_help():
     window = customtkinter.CTk()
     window.title("Help")
     window.resizable(False, False)
+    window.iconbitmap("img/logo.ico")
 
     title_label = customtkinter.CTkLabel(window, text="Help", fg_color="transparent", font=("Arial", 20, "bold"))
     title_label.pack(padx=5, pady=5)
