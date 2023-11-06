@@ -27,14 +27,14 @@ class GenerateReadme:
             # Remove the file's content
             readme.truncate(0)
 
-        if len(self.title) != 0 or len(self.logo) != 0:
-            if len(self.title) != 0 and len(self.logo) != 0:
+        if self.title.strip() or self.logo.strip():
+            if self.title.strip() and self.logo.strip():
                 readme.write("<div align=\"center\">\n")
                 readme.write("<img src=\""+self.logo+"\">\n\n")
                 readme.write("# " + self.title+"\n\n---\n\n")
                 readme.write("</div>\n\n")
 
-            elif len(self.title) != 0 and len(self.logo) == 0:
+            elif self.title.strip() and not self.logo.strip():
                 readme.write("<div align=\"center\">\n\n")
                 readme.write("# " + self.title+"\n\n---\n")
                 readme.write("</div>\n\n")
@@ -43,7 +43,7 @@ class GenerateReadme:
                 readme.write("<img src=\""+self.logo+"\">\n")
                 readme.write("</div>\n\n---\n\n")
 
-        if len(self.description) != 0:
+        if self.description.strip():
             readme.write(self.description + "\n")
 
         if self.checkboxs[0] == 1 or self.checkboxs[1] == 1 or self.checkboxs[2] == 1:
@@ -66,27 +66,27 @@ class GenerateReadme:
             for screenshot in self.screenshots:
                 readme.write("![alt text](" + screenshot + ")\n")
 
-        if len(self.installation) != "":
+        if self.installation.strip():
             readme.write("## Installation\n\n---\n")
             readme.write(self.installation + "\n")
 
-        if len(self.sources) != "":
+        if self.sources.strip():
             readme.write("## Sources\n\n---\n")
             readme.write(self.sources + "\n")
 
-        if len(self.personalized) != "" or len(self.personalizedTitle) != 0:
+        if self.personalized.strip() or self.personalizedTitle.strip():
             readme.write("## " + self.personalizedTitle + "\n\n---\n")
             readme.write(self.personalized + "\n")
 
-        if len(self.contact) != 0:
+        if self.contact.strip():
             readme.write("## Contact: \n\n---\n")
             readme.write(self.contact + "\n")
 
-        if len(self.contributors) != 0:
+        if self.contributors.strip():
             readme.write("## contributors: \n\n---\n")
             readme.write(self.author + "\n")
 
-        if len(self.version) != 0:
+        if self.version.strip():
             readme.write("## Version: ")
             readme.write(self.version + "\n")
 
