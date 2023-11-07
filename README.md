@@ -37,6 +37,7 @@ A python app who can created the readme.md file for your your github projects. I
 - your file will be a the root of the project name "result.md"
 
 ## Sources
+
 ---
 - python; the programming language used
 - tkinter: The graphical library used to create the user interface.
@@ -53,4 +54,4 @@ A python app who can created the readme.md file for your your github projects. I
 
 ---
 Discord: Quentinou
-## Version: v1.0
+## Version: v1.3
