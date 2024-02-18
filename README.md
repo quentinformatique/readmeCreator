@@ -10,7 +10,7 @@
 A python app who can created the readme.md file for your your github projects. It uses custom tkinter for the ui. For exemple this readme file was created using this generator(see second the screenshot). fell free to cotact me if you hava any questions, find any bug or have any upgrades ideas.
 
 <div align="center">
--<a href="https://github.com/quentinformatique/readmeCreator/releases/latest">Download</a>--<a href="https://github.com/quentinformatique/readmeCreator/issues/new/choose">Report a bug</a>--<a href="https://github.com/quentinformatique/readmeCreator/issues/new/choose">Request a feature</a>-
+--<a href="https://github.com/quentinformatique/readmeCreator/issues/new/choose">Report a bug</a>--<a href="https://github.com/quentinformatique/readmeCreator/issues/new/choose">Request a feature</a>-
 </div>
 
 ## Features
